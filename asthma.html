@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Diagnosis || Medviser</title>
+    <link rel="stylesheet" href="heart.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Image/New Icon.png" alt="Medviser Logo">
+        <h1>MEDVISER</h1>
+    </div>
+    <div class="navbar">
+        <button class="chat" onclick="gotoChat()">CHAT</button>
+        <button class="diagnose" onclick="gotoDiagnose()">DIAGNOSE</button>
+    </div>
+    <div class="predictor">
+        <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.37.2/gradio.js"
+    ></script>
+
+    <gradio-app src="https://criticaldanger-asthma-disease-prediction.hf.space"></gradio-app>
+    </div>
+    <script src="asthma.js"></script>
+</body>
+</html>
