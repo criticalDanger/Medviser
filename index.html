@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medivser</title>
+    <title>Medviser</title>
     <link rel="stylesheet" href="chat.css">
     <script src="chat.js"></script>
 </head>
@@ -17,44 +17,54 @@
         <button class="diagnose" onclick="gotoDiagnose()">DIAGNOSE</button>
     </div>
     <div>
-        <div class="absolute inset-4 ">
-        <div
-        class="center-div"
-        >
-            <iframe
-            style="border: none;"
-            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
-            <script>
-                window.botpressWebChat.init({
-                    'composerPlaceholder': 'Chat with bot',
-                    'botName': 'Medviser bot',
-                    'botId': 'f3fdaae0-13f9-42dd-887f-e43969004df1',
-                    'hostUrl': 'https://cdn.botpress.cloud/webchat/v1',
-                    'messagingUrl': 'https://messaging.botpress.cloud',
-                    'clientId': 'f3fdaae0-13f9-42dd-887f-e43969004df1',
-                    'enableConversationDeletion': true,
-                    'showPoweredBy': false,
-                    'className': 'webchatIframe',
-                    'containerWidth': '100%25',
-                    'layoutWidth': '100%25',
-                    'hideWidget': true,
-                    'showTimestamp': true,
-                    'showCloseButton': false,
-                    'disableAnimations': true,
-                    'closeOnEscape': false,
-                    'showConversationsButton': false,
-                    'enableTranscriptDownload': false,
-                    'stylesheet':'https://webchat-styler-css.botpress.app/prod/b0d1b7cf-bbca-468f-bcbe-0fdf9597218a/v86299/style.css'
-                
-                });
-                window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
-            </script></body>"
-            width="200%"
-            height="200%"
-            ></iframe>
+        <div class="absolute inset-4">
+            <div class="center-div">
+                <iframe
+                    style="border: none;"
+                    srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
+                    <script>
+                        window.botpressWebChat.init({
+                            'composerPlaceholder': 'Chat with bot',
+                            'botName': 'Medviser bot',
+                            'botId': 'f3fdaae0-13f9-42dd-887f-e43969004df1',
+                            'hostUrl': 'https://cdn.botpress.cloud/webchat/v1',
+                            'messagingUrl': 'https://messaging.botpress.cloud',
+                            'clientId': 'f3fdaae0-13f9-42dd-887f-e43969004df1',
+                            'enableConversationDeletion': true,
+                            'showPoweredBy': false,
+                            'className': 'webchatIframe',
+                            'containerWidth': '100%25',
+                            'layoutWidth': '100%25',
+                            'hideWidget': true,
+                            'showTimestamp': true,
+                            'showCloseButton': false,
+                            'disableAnimations': true,
+                            'closeOnEscape': false,
+                            'showConversationsButton': false,
+                            'enableTranscriptDownload': false,
+                            'stylesheet':'https://webchat-styler-css.botpress.app/prod/b0d1b7cf-bbca-468f-bcbe-0fdf9597218a/v86299/style.css'
+                        });
+                        window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                    </script></body>"
+                    width="100%"
+                    height="500px"
+                ></iframe>
+            </div>
         </div>
     </div>
 
+    <div class="description-section">
+        <h2>About Medviser Bot</h2>
+        <p>The <strong>Medviser Bot</strong> is your personal health assistant, designed to provide accurate, reliable, and user-friendly support for all your health-related questions. Powered by advanced Artificial Intelligence, the Medviser Bot offers two main features:</p>
 
+        <ul>
+            <li><strong>AI Chat Support:</strong> Ask your health queries, and the bot will respond with accurate information sourced from trusted medical databases. Whether you're curious about symptoms, treatments, or general wellness, the bot is here to assist.</li>
+            <li><strong>Disease Risk Prediction:</strong> By answering a series of tailored questions about your health and lifestyle, you can receive personalized insights into potential risks for certain diseases. This feature empowers you to take proactive steps towards better health management.</li>
+        </ul>
+
+        <p>Unlike traditional search engines that provide abstract or generalized answers, the Medviser Bot processes complex multi-parameter queries to give tailored responses. It ensures a seamless, efficient experience, helping you make informed health decisions.</p>
+
+        <p>Whether you're seeking advice on symptoms, understanding potential risks, or just looking for trustworthy health information, Medviser is your go-to digital companion. Experience the future of health support today with Medviser Bot!</p>
+    </div>
 </body>
 </html>
