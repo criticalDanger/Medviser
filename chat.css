@@ -60,6 +60,44 @@ body {
     align-items: center;
 }
 
+.description-section {
+    background-color: #f9f9f9; /* Light background for readability */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 20px; /* Adequate padding for content spacing */
+    margin: 20px auto; /* Centering with spacing from other sections */
+    width: 80%; /* Responsive width for different screen sizes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    color: #333; /* Dark text for contrast */
+}
+
+.description-section h2 {
+    text-align: center; /* Centered title */
+    color: #f63b2d; /* Accent color for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.description-section p {
+    line-height: 1.6; /* Comfortable line spacing */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.description-section ul {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 20px; /* Indentation for list items */
+    margin-top: 10px; /* Space above the list */
+}
+
+.description-section ul li {
+    margin: 8px 0; /* Space between list items */
+}
+
+.description-section strong {
+    color: #f63b2d; /* Highlighted text for strong emphasis */
+}
+
+
 @media only screen and (max-width: 600px) {
     .center-div {
       height: 300px;
